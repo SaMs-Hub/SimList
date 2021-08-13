@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>
+        <%= locals.title %>
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+
+    <h1 id="page_heading">
+        <i class="fas fa-address-book">
+        </i> Contacts List
+    </h1>
+
+    <div id='contacts-list-container'>
+        <ul>
+            <% for (let i of contact_list){ %>
+                <li class="contact">
+                    <div class="details">
+                        <p>
+                            <%= i.name %>
+                        </p>
+                        <p>
+                            <%= i.phone %>
+                        </p>
+                    </div>
+                    <div class="delete-button">
+                        <a href="/delete-contact/?id=<%= i._id %>">
+                            <i class='fas fa-window-close'></i>
+                        </a>
+                    </div>
+                </li>
+                <% } %>
+        </ul>
+    </div> 
+
+    <form id="new-contact-form" action="/create-contact" method="POST">
+        <input type="text" name="name" placeholder="Enter Name" required>
+        <input type="number" name="phone" placeholder="Enter Number" required>
+
+        <button type="submit"> Add</button>
+    </form>
+</body>
+<script type="text/javascript" src="/javascript/home.js"></script>
+
+</html>

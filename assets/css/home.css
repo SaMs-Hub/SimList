@@ -1,0 +1,82 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(50deg, #b97d07 0%, #8e008a 74%);
+}
+
+h1{
+    padding: 30px;
+    color: white;
+}
+#contacts-list-container{
+    width: 30%;
+    margin: auto;
+}
+
+#contacts-list-container ul{
+    padding: 0;
+    list-style: none;
+}
+
+.contact{
+    padding: 3px 10px;
+    border: 1px solid white;
+    background-image: linear-gradient(50deg, #3a00df 0%, #ff7676 74%);
+    color: white;
+    box-shadow: 1px 1px 1px 1px grey;
+    display: flex;
+    font-family: optima;
+    font-weight: 500;
+}
+
+.contact:hover{
+    background-image: linear-gradient(50deg, #ff7676 0%, #3a00df 75%);
+}
+
+.contact .details{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact .delete-button{
+    width: 10%;
+    margin-top: 5px;
+}
+
+.contact .delete-button a{
+    background-color: maroon;
+    color: white;
+}
+
+.contact p{
+    margin: 5px 0;
+}
+
+input{
+    border: 2.5px solid #981e6b;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+input, select, textarea{
+    color: #7b52cc;
+    background-color: #ffe4fe;
+
+textarea:focus, input:focus {
+    color: #ff0000;
+}
+
+button{
+    height: 25px;
+    width: auto;
+    font-size: 0.8rem;
+    color: white;
+    background-color: grey;
+    font-family: sans-serif;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px darkgray;
+}

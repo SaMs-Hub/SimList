@@ -1,0 +1,24 @@
+<html><head>
+    <title>
+        <%= title %>
+    </title>
+</head>
+<body>
+    <% var array1 = [8, 1, 4, 6, 7] %>
+    <h1>Something goes here</h1>
+    <ul>
+        <% for(var i in array1){ %>
+
+            <li>
+                <%= array1[i] %>
+            </li>
+        <%}%>
+    </ul>
+
+    <% if(2 == 3){ %>
+        <h1> true</h1>
+    <% } else{  %>
+        <p>false</p>
+    <% } %>
+</body>
+</html>
