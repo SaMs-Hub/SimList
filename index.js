@@ -1,9 +1,13 @@
 const express = require('express');
 const path = require('path');
 const port = process.env.PORT || 8000;
+import firebase from 'firebase';
+import 'firebase/firestore';
 
 const db = require('./config/mongoose');
 const Contact = require('./models/contact');
+
+
 
 const app = express();
 
