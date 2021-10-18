@@ -1,6 +1,9 @@
-<h1> SimList </h1>
+<h1> SimList</h1>
 
-<h3> SimList is an NodeJS based web app </h3>
+<h3> Preview using </h3>
+https://www.youtube.com/watch?v=dsLXCHvdzMo
+
+<h4> SimList is an NodeJS based web app </h4>
 
 <h4> It is developed using Express JS with MongoDB as its core Database. It support CRUD operations where the User can add, delete, or even Update a Contact of his Choice </h4>
 
